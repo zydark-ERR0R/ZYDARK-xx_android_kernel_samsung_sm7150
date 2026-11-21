@@ -67,6 +67,7 @@ jobs:
       - name: Build kernel
         run: |
           chmod +x build.sh
+          export KBUILD_BUILD_TIMESTAMP="Thu Feb 29 14:12:15 +07 2024"
           bash build.sh \
             "${{ matrix.device.name }}" \
             "${{ matrix.device.device2 }}" \
